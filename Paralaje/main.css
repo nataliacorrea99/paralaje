@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    background-color: #000;
+    color: #fff;
+    width: 100vw;
+    height: 100vh;
+}
+.contenedor {
+width: 100%;
+height: 100vh;
+overflow-x: hidden;
+overflow-y: auto;
+perspective: 200px;
+
+}
+
+[class*="contenedor-paralaje"] {
+    height: 100vh;
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+.contenedor-paralaje1 {
+   /* background-color: aqua;*/
+}
+
+.contenedor-paralaje2 {
+    background-color:#C4AD02;
+}
+.elemento {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+
+}
+.elemento-1{
+    background-image: url(/img/fondo.png);
+    background-position: center;
+    background-size: cover;
+    transform: translateZ(-600px) scale(4);
+    z-index: 0;
+}
+
+.elemento-2{
+    background-image: url(/img/elemento2.png);
+    background-position: center;
+    background-size: cover;
+    transform: translateZ(-400px) scale(3);
+    z-index: 1;
+}
+.elemento-3{
+    background-image: url(/img/elemento3.png);
+    background-position: center;
+    background-size: cover;
+    transform: translateZ(-250px) scale(2.2);
+    z-index: 2;
+}
+
+.elemento-4{
+    background-image: url(/img/elemento4.png);
+    background-position: center;
+    background-size: cover;
+    transform: translateZ(-150px) scale(1.75);
+    z-index: 4;
+}
+
+.elemento-5{
+    background-image: url(/img/elemento5.png);
+    background-position: center;
+    background-size: cover;
+    transform: translateZ(-50px) scale(1.25);
+    z-index: 5;
+}
+
+.elemento-6{
+    background-image: url(/img/elemento6.png);
+    background-position: center;
+    background-size: cover;
+    transform: translateZ(-20px) scale(1.1);
+    z-index: 6;
+}
+
+.elemento-7{
+    background-image: url(/img/elemento7.png);
+    background-position: center;
+    background-size: cover;
+    
+    z-index: 7;
